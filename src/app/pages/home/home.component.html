@@ -1,0 +1,49 @@
+<main>
+<section class="b-buttons">
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary" (click) = "trending()">Trending</button>
+ </div>
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary" (click) = "Current()">Current</button>
+ </div>
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary" (click) = "UpComing()">Upcoming</button>
+ </div>
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary"(click) = "Average()">Average</button>
+ </div>
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary"(click) = "User()">User</button>
+ </div>
+ <div>
+  <button pButton type="button" class="p-button-raised p-button-rounded p-button-secondary"(click) = "User()">
+  <a routerLink="/all" style="text-decoration: none; color: white">All</a></button>
+ </div>
+</section>
+
+<div class="b-card">
+  <ul class="b-card__item">
+    <li *ngIf="trendingV">
+    <app-gallery [trendingDatosGallery]="trendingDatos"></app-gallery>
+    </li>
+  </ul>
+
+    <div *ngIf="currentV">
+    <app-gallery [currentVDatosGallery]="currentVDatos"></app-gallery>
+    </div>
+
+    <div *ngIf="UpComingV">
+    <app-gallery [UpComingVDatosGallery]="UpComingVDatos"></app-gallery>
+    </div>
+
+    <div *ngIf="AverageV">
+    <app-gallery [AverageVDatosGallery]="AverageVDatos"></app-gallery>
+    </div>
+
+    <div *ngIf="UserV">
+    <app-gallery [UserVDatosGallery]="UserVDatos"></app-gallery>
+    </div>
+
+</div>
+
+<main>

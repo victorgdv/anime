@@ -1,0 +1,24 @@
+img{
+  height: 410px;
+  object-fit: cover;
+}
+
+
+.b-card{
+  max-width: 300px;
+  text-align: center;
+}
+
+.b-card__item{
+ list-style-type: none;
+ text-decoration: none;
+ display: flex;
+ max-width: calc(25% - 5px);
+}
+
+.b-card__gallery{
+  margin: 10px 10px 10px 0;
+  border: 2px solid grey;
+  background: rgb(238, 235, 235);
+}
+

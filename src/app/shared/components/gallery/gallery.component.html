@@ -1,0 +1,56 @@
+<div class="b-card">
+  <ul class="b-card__item">
+    <li class="b-card__gallery" *ngFor="let anime of animeAllGallery">
+    <img src="{{anime.attributes.posterImage.medium}}" alt="">
+    <h2>{{anime.attributes.canonicalTitle}}</h2>
+    <p>{{anime.attributes.description | slice:0:320 }}...</p>
+    <span><i>Japanese Title: {{anime.attributes.titles.ja_jp}}</i></span>
+    </li>
+  </ul>
+</div>
+
+<div class="b-card">
+  <ul class="b-card__item">
+    <li class="b-card__gallery" *ngFor="let anime1 of trendingDatosGallery">
+    <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+    <h2>{{anime1.attributes.canonicalTitle}}</h2>
+    <p>{{anime1.attributes.description | slice:0:320 }}...</p>
+    <span><i>Japanese Title: {{anime1.attributes.titles.ja_jp}}</i></span>
+    </li>
+  </ul>
+  <ul class="b-card__item">
+    <li class="b-card__gallery" *ngFor="let anime1 of currentVDatosGallery">
+    <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+    <h2>{{anime1.attributes.canonicalTitle}}</h2>
+    <p>{{anime1.attributes.description | slice:0:320 }}...</p>
+    <span><i>Japanese Title: {{anime1.attributes.titles.ja_jp}}</i></span>
+    </li>
+  </ul>
+  <ul class="b-card__item">
+    <li class="b-card__gallery" *ngFor="let anime1 of UpComingVDatosGallery">
+      <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+      <h2>{{anime1.attributes.canonicalTitle}}</h2>
+      <p>{{anime1.attributes.description | slice:0:320 }}...</p>
+      <span><i>Japanese Title: {{anime1.attributes.titles.ja_jp}}</i></span>
+    </li>
+  </ul>
+  <ul class="b-card__item">
+    <li class="b-card__gallery" *ngFor="let anime1 of AverageVDatosGallery">
+        <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+        <h2>{{anime1.attributes.canonicalTitle}}</h2>
+        <p>{{anime1.attributes.description | slice:0:320 }}...</p>
+        <span><i>Japanese Title: {{anime1.attributes.titles.ja_jp}}</i></span>
+    </li>
+  </ul>
+
+  <ul class="b-card__item">
+     <li class="b-card__gallery" *ngFor="let anime1 of UserVDatosGallery">
+          <img src="{{anime1.attributes.posterImage.medium}}" alt="">
+          <h2>{{anime1.attributes.canonicalTitle}}</h2>
+          <p>{{anime1.attributes.description | slice:0:320 }}...</p>
+          <span><i>Japanese Title: {{anime1.attributes.titles.ja_jp}}</i></span>
+     </li>
+  </ul>
+</div>
+
+
